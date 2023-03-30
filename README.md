@@ -1,2 +1,2 @@
 # exam_project
- Homelessness statistics by US state
+ Visualization of homelessness statistics by US state
