@@ -30,7 +30,8 @@ states = list(df_small["state"])
 # This organizes the individual column into a list and re-names it "people"
 people = (df_small["individuals"])
 
-# This sorts and combines the data in the two lists: individuals and state, and arranges it in descending order
+
+# This sorts and combines the data, creating a loop of the two lists: individuals and state, and arranges it in descending order
 people_sorted = sorted(people)
 states_sorted = [st for _, st in sorted(zip(people, states))]
 
