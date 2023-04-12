@@ -24,13 +24,13 @@ print(df)
 # In this case, all of the 53 rows are displayed, but I can easily change it by adjusting the number.
 df_small = df.iloc[0:53]
 
-# This organizes the states  into a list
 
-# This takes the individuals column and name it "people"
+# This organizes the states into a list, making it easier to work with when combining with another list
 states = list(df_small["state"])
+# This organizes the individual column into a list and re-names it "people"
 people = (df_small["individuals"])
 
-# This sorts and arranges the number of individuals by state in descending order
+# This sorts and combines the data in the two lists: individuals and state, and arranges it in descending order
 people_sorted = sorted(people)
 states_sorted = [st for _, st in sorted(zip(people, states))]
 
